@@ -1,0 +1,22 @@
+package com.mercury.basic.oop;
+
+public class AccessibilityPar {
+	
+	// public : access from anywhere
+	// protected
+	// package
+	// private : access only from same class
+	
+	// both protected & package function can only be called from same package
+	// 
+	
+	public static void foo() {
+		System.out.println("Par foo");
+	}
+	
+	public void bar() {
+		System.out.println("Par bar");
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+package com.mercury.basic;
+
+public class AccessibilitySub2 {
+	public static void main(String args[]) {
+		
+	}
+}

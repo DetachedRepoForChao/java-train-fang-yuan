@@ -1,0 +1,22 @@
+package com.mercury.basic;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		String x = "Hello World";
+		
+		new String("abc");
+		
+		new User();
+		
+		System.out.println(x);
+		
+		foo();
+	}
+	
+	public static void foo() {
+		System.out.println("foo");
+	}
+
+}

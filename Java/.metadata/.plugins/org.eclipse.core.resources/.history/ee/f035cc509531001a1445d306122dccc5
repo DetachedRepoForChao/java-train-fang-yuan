@@ -1,0 +1,27 @@
+package com.mercury.basic.constructor;
+
+public class Test1 {
+	
+	public static class Par {
+		
+		// no return type specified for constructors
+		public Par() {
+			System.out.println("Creating par");
+		}
+		
+		public Par(int i) {
+			System.out.println("Creating par: " + i);
+		}
+		
+	}
+	
+	public static class Sub extends Par {
+		
+	}
+
+	public static void main(String[] args) {
+		new Par();
+		System.out.println("!@#");
+	}
+
+}

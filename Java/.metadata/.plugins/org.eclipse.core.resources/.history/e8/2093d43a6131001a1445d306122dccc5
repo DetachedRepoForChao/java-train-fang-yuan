@@ -1,0 +1,25 @@
+package com.mercury.basic;
+
+import java.util.ArrayList;
+
+public class HelloWorld {
+
+	// modifiers return functionName(arguments / parameters) {body}
+	public static int main(String[] args) {
+		
+		String x = "Hello World";
+		
+//		User u = new User();
+		int i = 8;
+		
+		System.out.println(x);
+		
+		foo();
+		return 1;
+	}
+	
+	public static void foo() {
+		System.out.println("foo");
+	}
+
+}

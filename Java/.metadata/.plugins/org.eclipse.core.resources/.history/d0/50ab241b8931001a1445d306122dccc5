@@ -1,0 +1,14 @@
+package com.mercury.basic;
+
+import com.mercury.basic.oop.AccessibilityPar;
+
+public class AccessibilitySub2 extens AccessibilityPar {
+	@Override
+	public void bar() {
+		System.out.println("Sub2 bar");
+	}
+	
+	public static void main(String args[]) {
+		AccessibilityPar.foo();
+	}
+}

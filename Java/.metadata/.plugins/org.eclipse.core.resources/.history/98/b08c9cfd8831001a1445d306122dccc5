@@ -1,0 +1,8 @@
+package com.mercury.basic.oop;
+
+public class AccessibilitySub1 {
+
+	public static void main(String args[]) {
+		AccessibilityPar.foo();
+	}
+}

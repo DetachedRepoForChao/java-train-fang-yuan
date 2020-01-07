@@ -1,0 +1,20 @@
+package com.mercury.basic;
+
+// final is a java keyword
+// can be added in front of a class / variable / function 
+// 1. final class cannot be extended
+// 2. final function cannot be overridden; (even work on static function)
+public class TestFinal {
+	
+	public static final void test() {};
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static class A extends TestFinal {
+//		public static void test() {}
+	}
+
+}

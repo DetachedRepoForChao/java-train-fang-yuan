@@ -1,0 +1,6 @@
+package com.mercury.basic;
+
+// all functions in interface are abstract ( <= Java 1.7)
+public interface Vehicle {
+	abstract void run();
+}

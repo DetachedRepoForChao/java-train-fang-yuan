@@ -1,0 +1,26 @@
+package com.mercury.basic.constructor;
+
+public class Test2 {
+	public static class Par {
+		
+		
+		public Par() {
+			System.out.println("Creating par");
+		}
+		
+		
+		
+	}
+	
+	public static class Sub extends Par {
+		public Sub() {
+			
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		new Sub(1);
+	}
+}

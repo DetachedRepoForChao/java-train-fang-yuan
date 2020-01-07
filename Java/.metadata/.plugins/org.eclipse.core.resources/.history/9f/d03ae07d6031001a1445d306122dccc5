@@ -1,0 +1,23 @@
+package com.mercury.basic;
+
+import java.util.ArrayList;
+
+ class HelloWorldc {
+
+	public static void main(String[] args) {
+		
+		String x = "Hello World";
+		
+//		User u = new User();
+		int i = 8;
+		
+		System.out.println(x);
+		
+		foo();
+	}
+	
+	public static void foo() {
+		System.out.println("foo");
+	}
+
+}

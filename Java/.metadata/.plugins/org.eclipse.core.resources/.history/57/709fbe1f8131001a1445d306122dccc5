@@ -1,0 +1,21 @@
+package com.mercury.basic.oop;
+
+public class ExtendTest {
+	
+	public static class Animal {
+		
+	}
+	
+	public static class Bird extends Animal {
+		
+	}
+	
+	public static class Fish extends Animal {
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

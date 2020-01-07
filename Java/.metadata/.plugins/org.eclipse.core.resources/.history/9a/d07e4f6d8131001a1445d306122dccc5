@@ -1,0 +1,27 @@
+package com.mercury.basic.oop;
+
+public class ExtendTest {
+	
+	public static class Animal {
+		public static void eat(String food) {
+			System.out.println("Eating " + food);
+		}
+		
+		public void move() {
+			System.out.println("Animal is moving...");
+		}
+	}
+	
+	public static class Bird extends Animal {
+		
+	}
+	
+	public static class Fish extends Animal {
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

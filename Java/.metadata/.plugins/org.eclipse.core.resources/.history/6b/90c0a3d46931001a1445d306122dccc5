@@ -1,0 +1,16 @@
+package com.mercury.basic;
+
+public class OuterClass {
+
+	public static class InnerClass1 {
+		
+	}
+	
+	public class InnerClass2 {
+		
+	}
+	
+	public static void main(String x[]) {
+		
+	}
+}

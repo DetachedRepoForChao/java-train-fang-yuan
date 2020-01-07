@@ -1,0 +1,22 @@
+package com.mercury.basic.oop;
+
+public class PolymorphismTest {
+	
+	public static class GrandPar {
+		
+	}
+	
+	public static class Par {
+		
+	}
+	
+	public static class Sub {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

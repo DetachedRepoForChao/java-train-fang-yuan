@@ -1,0 +1,26 @@
+package com.mercury.basic.oop;
+
+public class PolymorphismTest {
+	
+	public static class GrandPar {
+		
+	}
+	
+	public static class Par extends GrandPar {
+		
+	}
+	
+	public static class Sub extends Par {
+		
+	}
+
+	public static void main(String[] args) {
+		// up casting
+		Par p = new Sub();
+		
+		// down casting
+		Sub s = new Par();
+		
+	}
+
+}

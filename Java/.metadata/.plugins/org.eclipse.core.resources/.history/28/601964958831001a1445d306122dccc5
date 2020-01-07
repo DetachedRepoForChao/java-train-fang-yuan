@@ -1,0 +1,12 @@
+package com.mercury.basic.oop;
+
+public class AccessibilityPar {
+	
+	// public
+	// protected
+	// package
+	// private
+	private static void foo() {
+		System.out.println("Par foo");
+	}
+}
