@@ -1,0 +1,7 @@
+package com.mercury.bean;
+
+public class Stadium {
+	int id;
+	String name;
+	String address;
+}

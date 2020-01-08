@@ -1,0 +1,17 @@
+package com.mercury.basic;
+
+public class ExceptionHandling {
+
+	public static void testException() {
+		try {
+			throw new Exception();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.mercury.basic;
+
+import java.io.IOException;
+
+import com.sun.xml.internal.messaging.saaj.soap.impl.TreeException;
+
+public class ExceptionHandling {
+
+	// throws : indicate the caller, this function MAY throws Exception
+	public static void testException() throws NullPointerException {
+		System.out.println(1);
+
+		throw new NullPointerException();
+		
+//		try {
+//			System.out.println(2);
+//			int x = 23;
+//			if(x < 10) {
+//				throw new IOException();
+//			} else {
+//				throw new TreeException("ABC");
+//			}
+//			
+//		} catch (IOException e) {
+//			System.out.println(4);
+//			e.printStackTrace();
+//			System.out.println(5);
+//		}
+		
+//		System.out.println(6);
+	}
+	
+	
+	// ctrl + shift + o
+	public static void main(String[] args) throws Exception {
+		testException();
+	}
+
+}

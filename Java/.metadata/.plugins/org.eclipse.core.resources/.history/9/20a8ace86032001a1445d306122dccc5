@@ -1,0 +1,21 @@
+package com.mercury.basic;
+
+import com.mercury.bean.Stadium;
+
+public class CloneTest {
+
+	public static void main(String args[]) {
+		Stadium s = new Stadium(1, "Red Bull Arena", "1000 Meadow Rd");
+		System.out.println(s);
+		
+		Stadium s2 = s.clone();
+		System.out.println(s2);
+		
+		System.out.println("*****************");
+		
+		System.out.println(s == s2);
+		
+		
+	}
+
+}

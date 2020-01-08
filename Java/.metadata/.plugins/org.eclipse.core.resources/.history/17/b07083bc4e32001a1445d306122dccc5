@@ -1,0 +1,38 @@
+package com.mercury.basic;
+
+import java.io.FileNotFoundException;
+
+public class ExceptionHandling {
+
+	// throws : indicate the caller, this function MAY throws Exception
+	public static void testException() {
+		System.out.println(1);
+
+		if(true) {
+			throw new NullPointerException();
+		}
+		
+		
+		try {
+			System.out.println(2);
+			if(true) {
+				throw new NullPointerException();
+			}
+			System.out.println(3);
+			
+		} catch (Error e) {
+			System.out.println(4);
+			e.printStackTrace();
+			System.out.println(5);
+		}
+		
+		System.out.println(6);
+	}
+	
+	
+	// ctrl + shift + o
+	public static void main(String[] args) {
+		testException();
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.mercury.basic.constructor;
+
+import com.mercury.basic.A;
+
+public class B {
+
+	public static void main(String[] args) {
+		A a = new A();
+		a.id = 2;
+	}
+
+}

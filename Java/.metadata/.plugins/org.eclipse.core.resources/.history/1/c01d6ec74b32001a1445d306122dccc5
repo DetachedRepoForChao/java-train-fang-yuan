@@ -1,0 +1,18 @@
+package com.mercury.basic;
+
+import java.io.FileOutputStream;
+
+public class ExceptionHandling {
+
+	// throws : indicate the caller, this function MAY throws Exception
+	public static void testException() throws Exception {
+		throw new Exception();
+	}
+	
+	
+	// ctrl + shift + o
+	public static void main(String[] args) {
+		FileOutputStream fos = new FileOutputStream("c:/abc.txt");
+	}
+
+}

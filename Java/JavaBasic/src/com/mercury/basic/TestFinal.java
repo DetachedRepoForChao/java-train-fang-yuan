@@ -8,6 +8,7 @@ package com.mercury.basic;
 public class TestFinal {
 	
 	public static final void test() {};
+	Object o;
 	
 	public static class A extends TestFinal {
 //		public static void test() {}

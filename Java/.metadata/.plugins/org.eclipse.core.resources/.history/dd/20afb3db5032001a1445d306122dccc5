@@ -1,0 +1,60 @@
+package com.mercury.basic;
+
+import java.io.IOException;
+
+import javax.swing.text.BadLocationException;
+
+public class ExceptionHandling {
+
+	// throws : indicate the caller, this function MAY throws Exception
+	public static void testException() throws NullPointerException {
+		System.out.println(1);
+
+		throw new NullPointerException();
+		
+//		try {
+//			System.out.println(2);
+//			int x = 23;
+//			if(x < 10) {
+//				throw new IOException();
+//			} else {
+//				throw new TreeException("ABC");
+//			}
+//			
+//		} catch (IOException e) {
+//			System.out.println(4);
+//			e.printStackTrace();
+//			System.out.println(5);
+//		}
+		
+//		System.out.println(6);
+	}
+	
+	public static void testMultiException() {
+		try {
+			f1();
+			f2();
+		} catch(IOException ioe) {
+			
+		} catch(BadLocationException ble) {
+			
+		}
+	}
+	
+	public static void f1() throws IOException {
+		// logic
+		throw new IOException();
+	}
+	
+	public static void f2() throws BadLocationException {
+		//logic
+		throw new BadLocationException("a", 1);
+	}
+	
+	
+	// ctrl + shift + o
+	public static void main(String[] args)  {
+		testException();
+	}
+
+}
