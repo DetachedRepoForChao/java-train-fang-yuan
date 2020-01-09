@@ -1,0 +1,13 @@
+package com.mercury.io;
+
+import com.mercury.bean.Hotel;
+
+public class Test3Read {
+
+	public static void main(String[] args) {
+		Hotel h = new Hotel("Hilton", "1 Main Street", 100);
+		h.setYearage(10);
+
+	}
+
+}

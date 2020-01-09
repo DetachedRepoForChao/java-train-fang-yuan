@@ -1,0 +1,15 @@
+package com.mercury.io;
+
+public class Test2Read {
+
+	public static void main(String[] args) {
+
+		try() {
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

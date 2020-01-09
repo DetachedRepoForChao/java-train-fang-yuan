@@ -1,0 +1,12 @@
+package com.mercury.io;
+
+import com.mercury.bean.Hotel;
+
+public class Test3Read {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

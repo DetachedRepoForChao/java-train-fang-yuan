@@ -1,0 +1,17 @@
+package com.mercury.io;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Test3Write {
+
+	public static void main(String[] args) {
+		try(FileOutputStream fos = new FileOutputStream("resources/test3.dat");
+				ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

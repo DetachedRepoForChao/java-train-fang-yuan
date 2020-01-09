@@ -1,0 +1,15 @@
+package com.mercury.io;
+
+import java.io.FileInputStream;
+
+public class Test1Read {
+
+	public static void main(String[] args) {
+		try (FileInputStream fis = new FileInputStream("resources/test1.dat")) {
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

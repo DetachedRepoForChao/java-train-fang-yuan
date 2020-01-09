@@ -1,0 +1,14 @@
+package com.mercury.io;
+
+public class Test3Write {
+
+	public static void main(String[] args) {
+		try() {
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
