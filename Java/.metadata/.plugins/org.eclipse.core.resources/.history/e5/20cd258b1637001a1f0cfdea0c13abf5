@@ -1,0 +1,12 @@
+package com.mercury.basic;
+
+public class MySingleton {
+
+	public static class MyEagerSingleton {
+		private MyEagerSingleton() {}
+		private static MyEagerSingleton mes = new MyEagerSingleton();
+		public static MyEagerSingleton() {
+			return mes;
+		}
+	}
+}

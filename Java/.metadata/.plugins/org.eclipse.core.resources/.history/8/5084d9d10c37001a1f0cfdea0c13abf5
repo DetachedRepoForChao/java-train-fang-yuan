@@ -1,0 +1,19 @@
+package com.mercury.basic;
+
+public class StringBuilderTest {
+
+	public static void main(String[] args) {
+		
+		// Builder
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("x");
+		sb.append("y");
+		
+		String s = "x";
+		s += "y";
+		
+		System.out.println(sb);
+	}
+
+}

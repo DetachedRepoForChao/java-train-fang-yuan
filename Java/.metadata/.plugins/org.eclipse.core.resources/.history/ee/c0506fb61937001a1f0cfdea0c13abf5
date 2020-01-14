@@ -1,0 +1,9 @@
+package com.mercury.basic;
+
+public enum Direction {
+	North, South, West;
+	
+	public static void foo() {
+		System.out.println("Direction foo");
+	}
+}

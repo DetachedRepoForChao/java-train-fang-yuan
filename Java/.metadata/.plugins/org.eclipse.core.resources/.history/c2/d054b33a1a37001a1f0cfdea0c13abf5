@@ -1,0 +1,15 @@
+package com.mercury.basic;
+
+public enum Direction implements Cloneable{
+	North, South, West;
+	
+	public static void foo() {
+		System.out.println("Direction foo");
+	}
+	
+	public void bar() {
+		System.out.println(this.name() + " bar");
+	}
+	
+	
+}

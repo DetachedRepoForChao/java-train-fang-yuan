@@ -1,0 +1,36 @@
+package com.mercury.basic;
+
+public class MySingleton {
+
+	public static class MyEagerSingleton {
+		private MyEagerSingleton() {}
+		private static MyEagerSingleton mes = new MyEagerSingleton();
+		public static MyEagerSingleton getInstance() {
+			return mes;
+		}
+	}
+	
+	public static class DoubleNullSingleton {
+		private DoubleNullSingleton() {}
+		private static volatile DoubleNullSingleton dns = new DoubleNullSingleton();
+		public static DoubleNullSingleton getInstance() {
+			if(dns == null) {
+				synchronized(DoubleNullSingleton.class) {
+					if(dns == null) {
+						dns = new DoubleNullSingleton();
+					}
+				}
+			}
+			
+			return dns;
+		}
+	}
+	
+	public static void foo() {
+		Direction d = Direction.North;
+	}
+	
+	public static void bar(Direction d) {
+		
+	}
+}

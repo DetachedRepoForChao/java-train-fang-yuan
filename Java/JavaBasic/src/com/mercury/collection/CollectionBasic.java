@@ -102,9 +102,9 @@ public class CollectionBasic {
 		System.out.println("*************");
 		
 		// anonymous implementation
-		Comparator c = new Comparator() {
+		Comparator<Computer> c = new Comparator<Computer>() {
 			@Override
-			public int compare(Object o1, Object o2) {
+			public int compare(Computer o1, Computer o2) {
 				return 0;
 			}
 		};

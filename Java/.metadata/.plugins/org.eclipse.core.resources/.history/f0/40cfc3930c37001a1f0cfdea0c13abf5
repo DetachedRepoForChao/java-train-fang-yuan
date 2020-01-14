@@ -1,0 +1,17 @@
+package com.mercury.basic;
+
+public class StringBuilderTest {
+
+	public static void main(String[] args) {
+		
+		// Builder
+		StringBuilder sb = new StringBuilder();
+		System.out.println(sb.hashCode());
+		
+		sb.append("x");
+		sb.append("y");
+		
+		System.out.println(sb.hashCode());
+	}
+
+}
