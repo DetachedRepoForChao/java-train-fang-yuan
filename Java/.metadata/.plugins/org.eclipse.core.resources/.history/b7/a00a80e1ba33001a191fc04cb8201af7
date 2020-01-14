@@ -1,0 +1,18 @@
+package com.mercury.thread;
+
+public class ThreadBasic {
+	
+	public static class MyThread1 extends Thread {
+		@Override
+		public void run() {
+			System.out.println(Thread.currentThread().getName() +  " is running.");
+		}
+	}
+
+	public static void main(String[] args) {
+		MyThread1 mt1 = new MyThread1();
+		
+		mt1.run();
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.mercury.thread.concurrent;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadPoolTest {
+	
+	public static class DummyThread {
+		
+	}
+	
+	public static void process() {
+		ExecutorService es = Executors.newCachedThreadPool();
+	}
+
+	public static void main(String[] args) {
+		process();
+	}
+
+}

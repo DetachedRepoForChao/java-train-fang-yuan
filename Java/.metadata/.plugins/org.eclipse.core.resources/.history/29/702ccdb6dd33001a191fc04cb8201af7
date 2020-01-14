@@ -1,0 +1,47 @@
+package com.mercury.thread;
+
+public class WaitNotifyTest {
+	
+	public static class Patient {
+		int level;
+		String name;
+		
+		public Patient(String name, int level) {
+			this.name = name;
+			this.level = level;
+		}
+		
+		public String toString() {
+			return name;
+		}
+	}
+	
+	public static class Doctor {
+		
+		public void treat(Patient p) {
+			System.out.println("Treating " + p);
+			
+			try {
+				Thread.sleep(p.level * 1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			System.out.println(p + " is done!");
+		}
+	}
+
+	public static void main(String[] args) {
+		Patient pa = new Patient("A", 2);
+		Patient pb = new Patient("B", 3);
+		Patient pc = new Patient("C", 6);
+		
+		Doctor d = new Doctor();
+		d.treat(pa);
+		d.treat(pb);
+		d.treat(pc);
+		
+		System.out.println("**********");
+	}
+
+}

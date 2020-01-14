@@ -1,0 +1,52 @@
+package com.mercury.thread.concurrent;
+
+import java.util.concurrent.BlockingQueue;
+
+public class BlockingQueueTest {
+	
+	public static class Producer extends Thread {
+		BlockingQueue<Integer> bq;
+		
+		public Producer(BlockingQueue<Integer> bq) {
+			this.bq = bq;
+		}
+		
+		@Override
+		public void run() {
+			for(int i = 0; i < 100; i++) {
+				try {
+					bq.put(i);
+					System.out.println("Producing: " + i);
+					Thread.sleep(1000);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	
+	public static class Consumer extends Thread {
+		BlockingQueue<Integer> bq;
+		
+		public Consumer(BlockingQueue<Integer> bq) {
+			this.bq = bq;
+		}
+		
+		@Override
+		public void run() {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			while(!bq.isEmpty()) {
+				int x = bq.take();
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

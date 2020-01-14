@@ -1,0 +1,20 @@
+package com.mercury.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionBasic {
+
+	public static void main(String[] args) {
+		// generic - class
+		List<Integer> sl = new ArrayList();
+		
+		sl.add(1);
+		
+		System.out.println(sl);
+		
+		
+		Integer i = 2;
+	}
+
+}

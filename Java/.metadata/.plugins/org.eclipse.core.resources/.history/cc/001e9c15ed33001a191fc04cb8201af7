@@ -1,0 +1,13 @@
+package com.mercury.thread.concurrent;
+
+public class ThreadPoolTest {
+	
+	public static class DummyThread {
+		
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

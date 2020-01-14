@@ -1,0 +1,30 @@
+package com.mercury.thread;
+
+public class WaitNotifyTest {
+	
+	public static class Patient {
+		String name;
+		
+		public Patient(String name) {
+			this.name = name;
+		}
+		
+	}
+	
+	public static class Doctor {
+		int id;
+		
+		public Doctor(int id) {
+			this.id = id;
+		}
+		
+		public void treat(Patient p) {
+			System.out.println("Treating " + p);
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

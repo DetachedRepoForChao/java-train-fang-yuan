@@ -1,0 +1,30 @@
+package com.mercury.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionBasic {
+
+	public static void main(String[] args) {
+		// generic - class
+		// if generic is not provided, Object by default
+		List<Integer> sl = new ArrayList<Integer>();
+		
+		sl.add(1);
+		
+		System.out.println(sl);
+		
+		// Wrapper class
+		// Auto boxing / unboxing
+		// Boxing
+		Integer i = 2;	// Integer i = new Integer(2);
+		
+		// Unboxing
+		int j = new Integer(2);	// int j = 2;
+		
+		
+		
+		
+	}
+
+}

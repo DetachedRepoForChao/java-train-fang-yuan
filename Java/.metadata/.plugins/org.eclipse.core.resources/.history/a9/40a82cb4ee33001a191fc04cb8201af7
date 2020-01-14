@@ -1,0 +1,36 @@
+package com.mercury.thread.concurrent;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadPoolTest {
+	
+	public static class DummyThread implements Runnable{
+
+		int id;
+		public DummyThread(int id) {
+			this.id = id;
+		}
+		
+		@Override
+		public void run() {
+			System.out.println(Thread.currentThread().getName() + " -> " + id);
+		}
+		
+	}
+	
+	public static void process() {
+		ExecutorService es = Executors.newCachedThreadPool(5);
+		
+		for(int i = 0; i < 100; i++) {
+			es.submit(new DummyThread(i));
+		}
+		
+		es.shutdown();
+	}
+
+	public static void main(String[] args) {
+		process();
+	}
+
+}

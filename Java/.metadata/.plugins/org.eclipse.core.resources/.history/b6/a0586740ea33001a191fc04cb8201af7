@@ -1,0 +1,33 @@
+package com.mercury.thread.concurrent;
+
+import java.util.concurrent.locks.Lock;
+
+public class SafeLock {
+	
+	public static class MyThread extends Thread {
+		private int id;
+		private Lock lock1, lock2;
+		
+		public MyThread(int id, Lock lock1, Lock lock2) {
+			this.id = id;
+			this.lock1 = lock1;
+			this.lock2 = lock2;
+		}
+		
+		@Override
+		public void run() {
+			if(lock1.tryLock()) {
+				System.out.println(id + " gets " + lock1);
+				
+				
+			} else {
+				
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

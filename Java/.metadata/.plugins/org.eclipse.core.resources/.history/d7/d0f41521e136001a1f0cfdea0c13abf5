@@ -1,0 +1,58 @@
+package com.mercury.collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Vector;
+
+public class CollectionBasic {
+
+	public static void main(String[] args) {
+		// generic - class
+		// if generic is not provided, Object by default
+		List<Integer> sl = new ArrayList<Integer>();
+		
+		sl.add(1);
+		
+		System.out.println(sl);
+		
+		// Wrapper class
+		// Auto boxing / unboxing
+		// Boxing
+		Integer i = 2;	// Integer i = new Integer(2);
+		
+		// Unboxing
+		int j = new Integer(2);	// int j = 2;
+		
+		// vector:
+		// 1. default init capacity = 10
+		// 2. thread safe, performance bad
+		// 3. default resize rate = 2 (ArrayList is 1.5)
+		// 4. can provide capacity increment
+		List v = new Vector();
+		
+		List ll = new LinkedList();
+		
+		// allows null key, & null value
+		Map<Integer, String> hm = new HashMap();
+		
+		hm.put(2, null);
+		hm.put(null, "ABC");
+		
+		Map syncHm = Collections.synchronizedMap(hm);
+		
+		// thread safe - performance bad
+		// not allow null key
+		// not allow null value
+		Map<Integer, String> ht = new Hashtable();
+//		ht.put(2, null);
+		ht.put(null, "ABC");
+		
+		System.out.println("********888");
+	}
+
+}

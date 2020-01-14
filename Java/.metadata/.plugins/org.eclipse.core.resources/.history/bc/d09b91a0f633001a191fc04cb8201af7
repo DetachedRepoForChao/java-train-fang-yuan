@@ -1,0 +1,23 @@
+package com.mercury.thread.concurrent;
+
+import java.util.concurrent.BlockingQueue;
+
+public class BlockingQueueTest {
+	
+	public static class Producer extends Thread {
+		BlockingQueue bq;
+		
+		public Producer(BlockingQueue bq) {
+			this.bq = bq;
+		}
+	}
+	
+	public static class Consumer extends Thread {
+		
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

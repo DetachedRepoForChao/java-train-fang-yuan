@@ -1,0 +1,13 @@
+package com.mercury.thread;
+
+public class SyncTest {
+
+	public static void foo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

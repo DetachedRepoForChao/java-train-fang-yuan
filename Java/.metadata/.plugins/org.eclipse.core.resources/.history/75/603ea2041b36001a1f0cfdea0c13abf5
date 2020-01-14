@@ -1,0 +1,14 @@
+package com.mercury.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionBasic {
+
+	public static void main(String[] args) {
+		// generic
+		List sl = new ArrayList();
+		sl.add("abc");
+	}
+
+}

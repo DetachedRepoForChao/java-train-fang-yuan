@@ -1,0 +1,27 @@
+package com.mercury.collection;
+
+public class IterationTest {
+	
+	public static void iterateArray() {
+		int[] nums = {1, 2, 3, 4};
+		
+		// 1. traditional for loop
+//		for(int i = 0; i < nums.length; i++) {
+//			System.out.println(nums[i]);
+//		}
+		
+		// 2. enhanced for loop, for each
+		// internal logic:
+		for(int i : nums) {
+			System.out.println(i);
+		}
+		
+		// 3. iterator
+		// 4. forEach
+	}
+
+	public static void main(String[] args) {
+		iterateArray();
+	}
+
+}
