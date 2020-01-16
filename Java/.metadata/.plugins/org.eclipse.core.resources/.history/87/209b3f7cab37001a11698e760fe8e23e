@@ -1,0 +1,11 @@
+package com.mercury.java8;
+
+public interface Building {
+
+	// If an interface has 1 abstract function
+	// and no matter how many static / default function.
+	
+	void fall();
+	
+	
+}

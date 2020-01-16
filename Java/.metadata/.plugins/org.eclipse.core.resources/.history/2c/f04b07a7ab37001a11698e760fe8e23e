@@ -1,0 +1,16 @@
+package com.mercury.java8;
+
+@FunctionalInterface
+public interface Building {
+
+	// FunctionalInterface contains only 1 abstract function + (0-n) default / static function
+	
+	void fall();
+	String toString();
+	
+	
+	default void x() {};
+	default void y() {};
+	
+	static void z() {};
+}

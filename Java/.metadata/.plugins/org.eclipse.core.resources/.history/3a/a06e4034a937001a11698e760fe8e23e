@@ -1,0 +1,14 @@
+package com.mercury.java8;
+
+public interface Machine {
+
+	// all functions are public:
+	// 1. abstract (by default) : must no body
+	// 2. static function : must have body
+	// 3. default
+	
+	
+	static void foo() {
+		
+	}
+}

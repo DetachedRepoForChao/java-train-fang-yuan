@@ -1,0 +1,20 @@
+package com.mercury.java8;
+
+public class Washer implements Machine {
+
+	@Override
+	public void test() {
+		
+	}
+	
+	@Override
+	public static void foo() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

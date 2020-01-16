@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Consumer;
 
 public class IterationTest {
 	
@@ -46,12 +47,15 @@ public class IterationTest {
 //		}
 		
 		// 3. iterator
-		Iterator<Integer> iterator = l.iterator();
-		while(iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
+//		Iterator<Integer> iterator = l.iterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
 		
 		// 4. forEach()
+//		Consumer c = e -> System.out.println(e);
+		
+		l.forEach(e -> System.out.println(e));
 	}
 	
 	public static void iterateSet() {
@@ -68,12 +72,13 @@ public class IterationTest {
 //		}
 		
 		// 3. iterator
-		Iterator<Integer> iterator = hs.iterator();
-		while(iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
+//		Iterator<Integer> iterator = hs.iterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
 		
 		// 4. forEach
+		hs.forEach(e -> System.out.println(e * 2));
 	}
 
 	public static void testIterator() {
@@ -135,16 +140,19 @@ public class IterationTest {
 //			System.out.println(me.getKey() + " ---> " + me.getValue());
 //		}
 		
-		Iterator<Map.Entry<Integer, Integer>> i = s.iterator();
-		while(i.hasNext()) {
-			Map.Entry<Integer, Integer> me = i.next();
-			System.out.println(me.getKey() + " ---> " + me.getValue());
-		}
+//		Iterator<Map.Entry<Integer, Integer>> i = s.iterator();
+//		while(i.hasNext()) {
+//			Map.Entry<Integer, Integer> me = i.next();
+//			System.out.println(me.getKey() + " ---> " + me.getValue());
+//		}
+		
+		hm.forEach((k, v) -> System.out.println(k + " <<>> " + v));
 	}
 	
 	public static void main(String[] args) {
 //		iterateArray();
 //		iterateList();
+//		iterateSet();
 //		testIterator();
 		iterateMap();
 	}

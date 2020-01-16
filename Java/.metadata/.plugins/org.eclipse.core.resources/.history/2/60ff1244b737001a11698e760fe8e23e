@@ -1,0 +1,19 @@
+package com.mercury.java8;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class StreamAPITest {
+
+	public static void main(String[] args) {
+		// function package : java.util.function
+		Function f;
+		Supplier s;
+		Predicate p;
+		Consumer c;
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.mercury.java8;
+
+public class LambdaTest {
+	
+	public static class Arena implements Building {
+
+		@Override
+		public void fall() {
+			System.out.println("Arena fall");
+			
+		}
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+	}
+
+}
