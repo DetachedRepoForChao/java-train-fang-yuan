@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	
+	<bean id="ud" class="com.mercury.daos.UserDao" lazy-init="true"/>
+
+	<bean id="ud2" class="com.mercury.daos.UserDao"/>
+	
+	<bean id="rd" class="com.mercury.daos.RoomDao"/>
+	
+	<!-- Injection -->
+	<bean id="rd2" class="com.mercury.daos.RoomDao">
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="Noah"></constructor-arg>
+	</bean>
+	
+	<!-- property name will be used to call setter function -->
+	<!-- call default constructor to create object, then call setters to init values -->
+	<bean id="rd3" class="com.mercury.daos.RoomDao">
+		<property name="id" value="1"></property>
+		<property name="name" value="2"></property>
+	</bean>
+	
+	<!-- Dependency Injection (DI) -->
+	<bean id="ts" class="com.mercury.services.TrainingService">
+		<property name="rd" ref="rd3"></property>
+	</bean>
+	
+	<!-- spring bean scopes: -->
+	<!-- singleton (by default) -->
+	<!-- prototype, only create when required -->
+	<!-- request -->
+	<!-- session -->
+	<!-- Global Session (removed since spring 5) -->
+	<bean id="fd" class="com.mercury.daos.FacilityDao" scope="prototype"></bean>
+	
+	<bean id="ms" class="com.mercury.services.MarketingService">
+		<property name="fd" ref="fd"></property>
+	</bean>
+	
+	<!-- autowire default : by type + by name -->
+	<bean id="ms2" class="com.mercury.services.MarketingService" autowire="default">
+	</bean>
+</beans>

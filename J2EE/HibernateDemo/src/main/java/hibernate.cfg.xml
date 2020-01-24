@@ -22,7 +22,10 @@
         
         <!-- by default, 2nd level cache is enable -->
         <!-- Below property by default is true -->
-        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+        
+        <!-- Below property by default is false -->
+        <property name="hibernate.cache.use_query_cache">true</property>
 
 		<mapping resource="com/mercury/mappings/User.hbm.xml"/>
     </session-factory>

@@ -33,15 +33,4 @@ public class Test3SessionCache {
 		
 		HibernateUtil.closeSession();
 	}
-
-	
-	public void foo() {
-		Session session = HibernateUtil.currentSession();
-		Transaction t = session.beginTransaction();
-		
-		
-		
-		t.commit();
-		HibernateUtil.closeSession();
-	}
 }
